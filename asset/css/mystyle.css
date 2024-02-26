@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b9b3b3a2;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+center {
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+form {
+    margin-top: 2em;
+}
+
+
+.button1 {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2em;
+    margin: 2px;
+    cursor: pointer;
+    background-color: #00000046;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.button2 {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2em;
+    margin: 2px;
+    cursor: pointer;
+    background-color: #00000046;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.button3 {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2em;
+    margin: 2px;
+    cursor: pointer;
+    background-color: #00000046;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.button4 {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2em;
+    margin: 2px;
+    cursor: pointer;
+    background-color: #00000046;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.button5 {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2em;
+    margin: 2px;
+    cursor: pointer;
+    background-color: #00000046;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+table {
+    border: 2px solid #333;
+    border-collapse: collapse;
+    width: 280px;
+    margin: 0 auto;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+}
+
+input[type="button"] {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2em;
+    margin: 2px;
+    cursor: pointer;
+    background-color: #7e787846;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="button"]:hover {
+    background-color: #000000;
+}
