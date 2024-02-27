@@ -12,7 +12,7 @@
             <TABLE>
                 <tr>
                     <td>
-                        <INPUT type="text" name="Input" size="16">
+                        <INPUT type="text" name="Input" id="inputField" placeholder="0" size="16">
                         <br>
                     <td>
                 </tr>
@@ -29,16 +29,39 @@
                             <INPUT TYPE="button" NAME="seven" VALUE="7" OnClick="Calc.Input.value += '7'">
                             <INPUT TYPE="button" NAME="eight" VALUE="8" OnClick="Calc.Input.value += '8'">
                             <INPUT TYPE="button" NAME="nine" VALUE="9" OnClick="Calc.Input.value += '9'">   
-                            <INPUT TYPE="button" NAME="times" class="button3" VALUE="x" OnClick="Calc.Input.value += '*'"><br>
-                            <INPUT TYPE="button" NAME="clear" VALUE="c" OnClick="Calc.Input.value = ''">
-                            <INPUT TYPE="button" NAME="zero" VALUE="0" OnClick="Calc.Input.value += '0'">   
-                            <INPUT TYPE="button" NAME="DoIt" class="button4" VALUE="="
-                                OnClick="Calc.Input.value = eval(Calc.Input.value)">
+                            <INPUT TYPE="button"  NAME="times" class="button3" VALUE="x" OnClick="Calc.Input.value += '*'">  
+                            <br>
+                            <INPUT TYPE="button" NAME="zero" VALUE="0" OnClick="Calc.Input.value += '0'">
+                            <input type="button" class="button7" value="," onclick="appendValue(',')">
+                            <input class="button1" type="button" name="backspace" value="<" onclick="deleteLastDigit()">
                             <INPUT TYPE="button" NAME="div" class="button5" VALUE=" / " OnClick="Calc.Input.value += ' / '">
+                            <br>
+                            <INPUT TYPE="button" class="button6" NAME="clear" VALUE="c" OnClick="Calc.Input.value = ''">
+                            <INPUT TYPE="button" NAME="DoIt" class="button4" VALUE="="
+                               OnClick="Calc.Input.value = eval(Calc.Input.value)">                           
                     </td>
                 </tr>
             </TABLE>
         </FORM>
     </centers>
+    <script>
+        function appendValue(value) {
+            document.getElementById("inputField").value += value;
+        }
+
+        function deleteLastDigit() {
+            var currentInput = document.getElementById("inputField").value;
+            document.getElementById("inputField").value = currentInput.slice(0, -1);
+        }
+
+        function clearInput() {
+            document.getElementById("inputField").value = '';
+        }
+
+        function calculateResult() {
+            var input = document.getElementById("inputField").value.replace(/,/g, '.');
+            document.getElementById("inputField").value = eval(input);
+    }
+    </script>
 </body>
 </html>
