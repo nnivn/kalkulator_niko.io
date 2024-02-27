@@ -107,7 +107,7 @@ form {
 table {
     border: 2px solid #333;
     border-collapse: collapse;
-    width: 280px;
+    width: 270px;
     margin: 0 auto;
 }
 
@@ -117,9 +117,10 @@ td {
 }
 
 input[type="text"] {
-    width: 100%;
-    padding: 15px;
+    width: 95%;
+    padding: 10px;
     box-sizing: border-box;
+
     margin-bottom: 0px;
 }
 
